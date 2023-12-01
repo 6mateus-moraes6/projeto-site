@@ -15,3 +15,48 @@ main {
     padding: 10px;
     box-shadow: 3px 3px 5px rgb(230, 226, 226);
 }
+
+h1 {
+    font-size: 2em;
+    color: rgb(230, 226, 226);
+}
+
+#txtn {
+    font-size: 35px;
+    text-align: left;
+    margin-left: 50px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: rgb(230, 226, 226);
+}
+
+#img-2 {
+    width: 150px;
+    margin-top: -50px;
+}
+
+#img-3 {
+    width: 150px;
+}
+
+/* img {
+    width: 250px;
+    height: 300px;
+} */
+
+img.lado {
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(230, 226, 226);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: gray;
+}
