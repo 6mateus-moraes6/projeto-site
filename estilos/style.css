@@ -1,6 +1,8 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 body {
@@ -10,10 +12,10 @@ body {
 main {
     background-color: rgba(0, 0, 0, 0.329);
     color: white;
-    width: 500px;
+    width: 950px;
     margin: auto;
-    padding: 10px;
-    box-shadow: 3px 3px 5px rgb(230, 226, 226);
+    padding: 25px;
+    box-shadow: 0px 0px 5px 0px rgb(230, 226, 226);
 }
 
 h1 {
@@ -21,39 +23,48 @@ h1 {
     color: rgb(230, 226, 226);
 }
 
-#txtn {
-    font-size: 35px;
-    text-align: left;
-    margin-left: 50px;
-}
-
 h2 {
     font-size: 1.5em;
     color: rgb(230, 226, 226);
 }
 
-#img-2 {
-    width: 150px;
-    margin-top: -50px;
+#txtn {
+    font-size: 20px;
+    text-align: left;
 }
 
-#img-3 {
-    width: 150px;
+#img-1 {
+    width: 300px;
+    position: absolute;
+    top: 5%;
+    left: 63%;
 }
 
-/* img {
-    width: 250px;
-    height: 300px;
-} */
+.sec {
+    background-color: rgb(4, 4, 36);
+    margin: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
 img.lado {
-    float: right;
+    margin-top: 10px;
+    width: 150px;
 }
 
 a {
     text-decoration: none;
     font-weight: bold;
-    color: rgb(230, 226, 226);
+    color: rgb(64, 147, 202);
+}
+
+.sec:hover {
+    box-shadow: 0px 0px 9px gray;
 }
 
 a:hover {
