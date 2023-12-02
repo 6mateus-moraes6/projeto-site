@@ -1,7 +1,7 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    padding: 10px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -12,37 +12,50 @@ body {
 main {
     background-color: rgba(0, 0, 0, 0.329);
     color: white;
-    width: 950px;
+    width: 90%;
+    max-width: 750px;
     margin: auto;
-    padding: 25px;
+    padding: 20px;
+    display: block;
+    border-radius: 20px 20px 20px 20px;
     box-shadow: 0px 0px 5px 0px rgb(230, 226, 226);
 }
 
-h1 {
+h1 h2 {
     font-size: 2em;
     color: rgb(230, 226, 226);
 }
 
-h2 {
-    font-size: 1.5em;
-    color: rgb(230, 226, 226);
-}
-
-#txtn {
-    font-size: 20px;
-    text-align: left;
-}
-
 #img-1 {
-    width: 300px;
-    position: absolute;
-    top: 5%;
-    left: 63%;
+    width: 220px;
+    height: auto;
+    display: block;
+    max-width: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(98%, -90%);
 }
 
 .sec {
     background-color: rgb(4, 4, 36);
     margin: 10px;
+    padding: 10px;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.title {
+    margin: 0;
+    padding: 10px;
+}
+
+.article {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 15px;
 }
 
 .content {
@@ -70,4 +83,35 @@ a {
 a:hover {
     text-decoration: underline;
     color: gray;
+}
+
+/* para tamanhos de tela maiores que 600 pixels */
+@media screen and (min-width: 600px) {
+    #img-1 {
+        width: 220px;
+    }
+
+    .article {
+        max-width: 600px;
+    }
+
+    main {
+        padding: 25px;
+    }
+}
+
+/* para tamanhos de tela maiores que 900 pixels */
+@media screen and (min-width: 900px) {
+    main {
+        width: 80%;
+        max-width: 900px;
+    }
+}
+
+/* para tamanhos de tela maiores que 1200 pixels */
+@media screen and (min-width: 1200px) {
+    main {
+        width: 70%;
+        max-width: 1200px;
+    }
 }
