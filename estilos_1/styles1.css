@@ -2,16 +2,22 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+    margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
 body {
     background-color: rgb(4, 4, 36);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 h1 {
     font-size: 2em;
+    margin: 15px;
     color: rgb(230, 226, 226);
 }
 
@@ -20,8 +26,64 @@ div {
     margin: 10px;
 }
 
+.sec {
+    width: 80%;
+    margin: 15px;
+    padding: 15px;
+    overflow: auto;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 0px 5px 0px rgb(230, 226, 226);
+    background-color: rgba(0, 0, 0, 0.329);
+}
+
+.txt, .txtn, .direction-list, .conteudo-1, .conteudo-2 {
+    max-width: 1000px;
+    margin-right: 0px;
+}
+
+.conteudo-1, .conteudo-2 {
+    background-color: rgb(4, 4, 36);
+    border-radius: 20px 20px 20px 20px;
+}
+
+.txtn {
+    margin: 20px;
+}
+
+.direction-list {
+    margin: 35px 50px;
+    
+}
+
 .conteudo-1, .conteudo-2, .txt{
     font-size: 1em;
     color: rgb(230, 226, 226);
 }
 
+.position-img {
+    margin: 30px;
+    padding: 5px;
+}
+
+.conteudo-1:hover, .conteudo-2:hover {
+    box-shadow: 0px 0px 9px gray;
+    transition: box-shadow 0.3s ease;
+}
+
+@media screen and (max-width: 300px) {
+    .sec {
+      width: 90%; 
+    }
+  
+    .direction-list {
+      margin: 10px 0; 
+    }
+  
+    .conteudo-1, .conteudo-2 {
+      margin: 20px 0; 
+    }
+  
+    .position-img {
+      margin: 10px 0; 
+    }
+  }
