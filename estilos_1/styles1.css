@@ -27,23 +27,13 @@ div {
 }
 
 .sec {
-    width: 80%;
-    margin: 15px;
-    padding: 15px;
+    width: 86%;
+    margin: 14px;
+    padding: 14px;
     overflow: auto;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0px 0px 5px 0px rgb(230, 226, 226);
     background-color: rgba(0, 0, 0, 0.329);
-}
-
-.txt, .txtn, .direction-list, .conteudo-1, .conteudo-2 {
-    max-width: 1000px;
-    margin-right: 0px;
-}
-
-.conteudo-1, .conteudo-2 {
-    background-color: rgb(4, 4, 36);
-    border-radius: 20px 20px 20px 20px;
 }
 
 .txtn {
@@ -55,14 +45,24 @@ div {
     
 }
 
+.position-img {
+    margin: 30px;
+    padding: 5px;
+}
+
+.conteudo-1, .conteudo-2 {
+    background-color: rgb(4, 4, 36);
+    border-radius: 20px 20px 20px 20px;
+}
+
 .conteudo-1, .conteudo-2, .txt{
     font-size: 1em;
     color: rgb(230, 226, 226);
 }
 
-.position-img {
-    margin: 30px;
-    padding: 5px;
+.txt, .txtn, .direction-list, .conteudo-1, .conteudo-2 {
+    max-width: 1000px;
+    margin-right: 0px;
 }
 
 .conteudo-1:hover, .conteudo-2:hover {
@@ -70,20 +70,29 @@ div {
     transition: box-shadow 0.3s ease;
 }
 
-@media screen and (max-width: 300px) {
-    .sec {
-      width: 90%; 
+@media screen and (min-width: 600px) {
+
+    .article {
+        max-width: 600px;
     }
-  
-    .direction-list {
-      margin: 10px 0; 
+
+    .section {
+        padding: 25px;
     }
-  
-    .conteudo-1, .conteudo-2 {
-      margin: 20px 0; 
+}
+
+/* para tamanhos de tela maiores que 900 pixels */
+@media screen and (min-width: 900px) {
+    .section {
+        width: 80%;
+        max-width: 900px;
     }
-  
-    .position-img {
-      margin: 10px 0; 
+}
+
+/* para tamanhos de tela maiores que 1200 pixels */
+@media screen and (min-width: 1200px) {
+    .section {
+        width: 70%;
+        max-width: 1200px;
     }
-  }
+}
