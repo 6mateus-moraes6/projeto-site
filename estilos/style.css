@@ -41,7 +41,7 @@ a {
     padding: 14px;
     align-items: flex-start;
     justify-content: space-between;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
 }
 
 .title {

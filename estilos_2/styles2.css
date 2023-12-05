@@ -12,7 +12,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
 }
 
 h1 {
@@ -29,23 +28,31 @@ p {
     margin: 20px;
 }
 
+hr {
+    width: 200px;
+}
+
+#space {
+    margin: 14px;
+    padding: 14px;
+}
+
 .content {
     width: 86%;
     margin: 14px;
     padding: 14px;
     max-width: 1000px;
     margin-right: 0px;
-    align-items: flex-start;
-    justify-content: space-between;
-    overflow: auto;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
     box-shadow: 0px 0px 5px 0px rgb(230, 226, 226);
     background-color: rgba(0, 0, 0, 0.329);
+    overflow: auto;
 }
 
 .sec {
+    margin: auto;
     background-color: rgb(4, 4, 36);
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
 }
 
 .sec, .txt {
@@ -73,4 +80,31 @@ p {
 .sec:hover {
     box-shadow: 0px 0px 9px gray;
     transition: box-shadow 0.3s ease;
+}
+
+@media screen and (min-width: 600px) {
+
+    .section {
+        max-width: 600px;
+    }
+
+    .content {
+        padding: 25px;
+    }
+}
+
+/* para tamanhos de tela maiores que 900 pixels */
+@media screen and (min-width: 900px) {
+    .content {
+        width: 80%;
+        max-width: 900px;
+    }
+}
+
+/* para tamanhos de tela maiores que 1200 pixels */
+@media screen and (min-width: 1200px) {
+    .content {
+        width: 70%;
+        max-width: 1200px;
+    }
 }

@@ -12,7 +12,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
 }
 
 h1 {
@@ -31,7 +30,7 @@ div {
     margin: 14px;
     padding: 14px;
     overflow: auto;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
     box-shadow: 0px 0px 5px 0px rgb(230, 226, 226);
     background-color: rgba(0, 0, 0, 0.329);
 }
@@ -52,7 +51,7 @@ div {
 
 .conteudo-1, .conteudo-2 {
     background-color: rgb(4, 4, 36);
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
 }
 
 .conteudo-1, .conteudo-2, .txt{
